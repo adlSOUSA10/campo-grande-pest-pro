@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5567999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
+const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
 
 const WhatsAppFloat = () => {
   return (

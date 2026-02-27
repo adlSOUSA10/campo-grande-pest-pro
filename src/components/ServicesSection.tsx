@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Bug, Rat, Footprints, Zap, TreeDeciduous } from "lucide-react";
 import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5567999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
+const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
 
 const services = [
   {
@@ -56,7 +56,7 @@ const ServicesSection = () => {
             Nossos <span className="text-gradient">Serviços</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Soluções completas em controle de pragas para Campo Grande e região
+            Soluções completas em controle de pragas para Campo Grande - RJ e região
           </p>
         </motion.div>
 
@@ -69,7 +69,7 @@ const ServicesSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="mb-8 p-8 md:p-10 rounded-2xl bg-card border-2 border-primary/40 glow-green relative overflow-hidden"
+              className="mb-8 p-8 md:p-10 rounded-2xl bg-card border-2 border-primary/40 glow-blue relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-4 py-1 text-xs font-bold rounded-bl-lg">
                 DESTAQUE

@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 import { Phone, MessageCircle } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const WHATSAPP_LINK = "https://wa.me/5567999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
+const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
 
 const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src={heroBg} alt="Profissional de dedetização realizando controle de pragas em Campo Grande" className="w-full h-full object-cover" />
+        <img src={heroBg} alt="Profissional de dedetização realizando controle de pragas em Campo Grande RJ" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-background/80" />
         <div className="absolute inset-0 bg-gradient-radial" />
       </div>
@@ -22,11 +22,11 @@ const HeroSection = () => {
           className="max-w-3xl"
         >
           <span className="inline-block bg-primary/10 border border-primary/30 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-            ✅ Atendimento em Campo Grande - MS
+            ✅ Atendimento em Campo Grande - RJ
           </span>
 
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            Dedetização em Campo Grande com{" "}
+            Dedetização em Campo Grande - RJ com{" "}
             <span className="text-gradient">Atendimento Rápido</span> e Garantia
           </h1>
 
@@ -46,7 +46,7 @@ const HeroSection = () => {
               Solicitar Orçamento no WhatsApp
             </a>
             <a
-              href="tel:+5567999999999"
+              href="tel:+5521999999999"
               className="flex items-center justify-center gap-2 border border-primary/40 text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary/10 transition-all"
             >
               <Phone className="w-5 h-5" />

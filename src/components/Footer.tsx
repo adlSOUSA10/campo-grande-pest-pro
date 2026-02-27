@@ -1,6 +1,6 @@
 import { MapPin, Phone, MessageCircle, Clock } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5567999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
+const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="text-gradient">LZ</span> Dedetização
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-              Especialistas em controle de pragas urbanas em Campo Grande - MS.
+              Especialistas em controle de pragas urbanas em Campo Grande - RJ, Rio de Janeiro.
               Atendimento residencial, comercial e industrial com garantia.
             </p>
           </div>
@@ -24,11 +24,11 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-muted-foreground">
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-primary shrink-0" />
-                <span>Campo Grande - MS</span>
+                <span>Campo Grande - RJ, Rio de Janeiro</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary shrink-0" />
-                <span>(67) 99999-9999</span>
+                <span>(21) 99999-9999</span>
               </div>
               <a
                 href={WHATSAPP_LINK}
@@ -61,7 +61,7 @@ const Footer = () => {
 
         <div className="border-t border-border pt-6 text-center text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} LZ Dedetização. Todos os direitos reservados.</p>
-          <p className="mt-1">Dedetização em Campo Grande - MS | Controle de Pragas Profissional</p>
+          <p className="mt-1">Dedetização em Campo Grande - RJ | Controle de Pragas Profissional</p>
         </div>
       </div>
     </footer>
