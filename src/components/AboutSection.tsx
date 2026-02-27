@@ -24,7 +24,7 @@ const AboutSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             Somos uma empresa especializada em controle de pragas urbanas atuando em
-            Campo Grande e região. Com técnicos altamente treinados e produtos
+            Campo Grande, Rio de Janeiro, e região. Com técnicos altamente treinados e produtos
             regulamentados pela ANVISA, oferecemos soluções seguras e eficazes para
             residências, comércios e indústrias. Nosso compromisso é garantir a
             segurança da sua família e do seu patrimônio.

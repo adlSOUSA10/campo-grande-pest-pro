@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Zap, BadgeCheck, GraduationCap, ShieldCheck, Baby, MessageCircle } from "lucide-react";
 
 const reasons = [
-  { icon: Zap, text: "Atendimento rápido em Campo Grande" },
+  { icon: Zap, text: "Atendimento rápido em Campo Grande - RJ" },
   { icon: BadgeCheck, text: "Produtos aprovados pela ANVISA" },
   { icon: GraduationCap, text: "Técnicos especializados e certificados" },
   { icon: ShieldCheck, text: "Garantia em todos os serviços" },

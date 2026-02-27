@@ -6,19 +6,19 @@ const testimonials = [
     name: "Maria Silva",
     text: "Excelente serviço! A equipe foi super profissional e resolveu nosso problema com cupins rapidamente. Recomendo demais!",
     rating: 5,
-    location: "Campo Grande - MS",
+    location: "Campo Grande - RJ",
   },
   {
     name: "Carlos Mendes",
     text: "Atendimento rápido e eficiente. Tivemos um problema sério com baratas no restaurante e a LZ resolveu com garantia.",
     rating: 5,
-    location: "Campo Grande - MS",
+    location: "Campo Grande - RJ",
   },
   {
     name: "Ana Oliveira",
     text: "Muito satisfeita com o serviço de descupinização. Os técnicos foram cuidadosos e o resultado foi perfeito.",
     rating: 5,
-    location: "Campo Grande - MS",
+    location: "Campo Grande - RJ",
   },
 ];
 

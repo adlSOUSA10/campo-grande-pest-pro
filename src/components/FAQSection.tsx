@@ -8,7 +8,7 @@ import {
 
 const faqs = [
   {
-    question: "Quanto custa uma dedetização em Campo Grande?",
+    question: "Quanto custa uma dedetização em Campo Grande - RJ?",
     answer:
       "O valor varia de acordo com o tipo de praga, tamanho do imóvel e nível de infestação. Entre em contato pelo WhatsApp para receber um orçamento personalizado e gratuito.",
   },
@@ -28,9 +28,9 @@ const faqs = [
       "Em alguns casos, recomendamos a saída temporária do ambiente durante a aplicação. Nosso técnico orientará sobre o procedimento adequado para cada situação.",
   },
   {
-    question: "A LZ Dedetização atende toda Campo Grande?",
+    question: "A LZ Dedetização atende toda Campo Grande - RJ?",
     answer:
-      "Sim! Atendemos todos os bairros de Campo Grande e região metropolitana, incluindo áreas residenciais, comerciais e industriais.",
+      "Sim! Atendemos todos os bairros de Campo Grande e região do Rio de Janeiro, incluindo áreas residenciais, comerciais e industriais.",
   },
 ];
 
