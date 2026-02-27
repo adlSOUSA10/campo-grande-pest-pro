@@ -1,0 +1,140 @@
+import { motion } from "framer-motion";
+import { Bug, Rat, Footprints, Zap, TreeDeciduous } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+
+const WHATSAPP_LINK = "https://wa.me/5567999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
+
+const services = [
+  {
+    icon: Bug,
+    title: "Controle de Baratas",
+    description:
+      "Baratas transmitem doenças, contaminam alimentos e se proliferam rapidamente. Eliminamos infestações com métodos seguros e eficazes.",
+    featured: false,
+  },
+  {
+    icon: Rat,
+    title: "Controle de Ratos",
+    description:
+      "Ratos causam danos estruturais e transmitem doenças graves como leptospirose. Realizamos controle profissional completo.",
+    featured: false,
+  },
+  {
+    icon: Footprints,
+    title: "Controle de Formigas",
+    description:
+      "Formigas comprometem estruturas e invadem ambientes internos. Tratamento profissional para eliminação total da colônia.",
+    featured: false,
+  },
+  {
+    icon: Zap,
+    title: "Controle de Mosquitos",
+    description:
+      "Prevenção contra dengue, zika e chikungunya com eliminação de focos e controle adulticida profissional.",
+    featured: false,
+  },
+  {
+    icon: TreeDeciduous,
+    title: "Descupinização",
+    description:
+      "Cupins causam danos estruturais silenciosos, atacando móveis, portas e vigas. Utilizamos barreiras químicas, tratamento localizado e inspeção técnica especializada com garantia completa.",
+    featured: true,
+  },
+];
+
+const ServicesSection = () => {
+  return (
+    <section id="servicos" className="section-padding">
+      <div className="container mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+            Nossos <span className="text-gradient">Serviços</span>
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Soluções completas em controle de pragas para Campo Grande e região
+          </p>
+        </motion.div>
+
+        {/* Featured - Descupinização */}
+        {services
+          .filter((s) => s.featured)
+          .map((service, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mb-8 p-8 md:p-10 rounded-2xl bg-card border-2 border-primary/40 glow-green relative overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-4 py-1 text-xs font-bold rounded-bl-lg">
+                DESTAQUE
+              </div>
+              <div className="flex flex-col md:flex-row items-start gap-6">
+                <div className="w-16 h-16 rounded-xl bg-primary/20 flex items-center justify-center shrink-0">
+                  <service.icon className="w-8 h-8 text-primary" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-display text-2xl md:text-3xl font-bold mb-3 text-foreground">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground text-lg mb-4 leading-relaxed">
+                    {service.description}
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+                    {["Barreiras químicas", "Tratamento localizado", "Inspeção especializada"].map((item) => (
+                      <div key={item} className="flex items-center gap-2 text-sm text-foreground">
+                        <span className="w-2 h-2 rounded-full bg-primary" />
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                  <a
+                    href={WHATSAPP_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:brightness-110 transition-all"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    Solicitar Orçamento
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+
+        {/* Other services grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {services
+            .filter((s) => !s.featured)
+            .map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="p-6 rounded-xl bg-card border border-border hover:border-primary/30 transition-all group"
+              >
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <service.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-display text-xl font-bold mb-2 text-foreground">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {service.description}
+                </p>
+              </motion.div>
+            ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesSection;
