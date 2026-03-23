@@ -6,54 +6,54 @@
 
 @layer base {
   :root {
-    --background: 240 20% 5%;
-    --foreground: 230 10% 92%;
+    --background: 220 20% 96%;
+    --foreground: 240 20% 15%;
 
-    --card: 240 15% 8%;
-    --card-foreground: 230 10% 92%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 20% 15%;
 
-    --popover: 240 15% 8%;
-    --popover-foreground: 230 10% 92%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 20% 15%;
 
     --primary: 240 80% 41%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 15% 12%;
-    --secondary-foreground: 230 10% 92%;
+    --secondary: 220 15% 90%;
+    --secondary-foreground: 240 20% 15%;
 
-    --muted: 240 10% 14%;
-    --muted-foreground: 240 8% 55%;
+    --muted: 220 14% 92%;
+    --muted-foreground: 240 8% 45%;
 
     --accent: 240 80% 41%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 240 10% 16%;
-    --input: 240 10% 16%;
+    --border: 220 13% 87%;
+    --input: 220 13% 87%;
     --ring: 240 80% 41%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 240 15% 8%;
-    --sidebar-foreground: 230 10% 92%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 20% 15%;
     --sidebar-primary: 240 80% 41%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 10% 14%;
-    --sidebar-accent-foreground: 230 10% 92%;
-    --sidebar-border: 240 10% 16%;
+    --sidebar-accent: 220 14% 92%;
+    --sidebar-accent-foreground: 240 20% 15%;
+    --sidebar-border: 220 13% 87%;
     --sidebar-ring: 240 80% 41%;
 
     /* Custom tokens */
     --glow: 240 80% 41%;
-    --surface: 240 12% 10%;
-    --surface-hover: 240 12% 14%;
+    --surface: 220 16% 93%;
+    --surface-hover: 220 14% 88%;
     --whatsapp: 142 70% 49%;
     --whatsapp-foreground: 0 0% 100%;
     --highlight: 240 70% 55%;
-    --gradient-start: 240 25% 8%;
-    --gradient-end: 240 80% 12%;
+    --gradient-start: 220 20% 96%;
+    --gradient-end: 230 30% 92%;
   }
 }
 
