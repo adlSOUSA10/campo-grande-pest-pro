@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
@@ -24,15 +24,16 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding bg-gradient-surface">
+    <section className="section-padding">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-14"
         >
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+          <span className="section-label mb-6 inline-flex">Depoimentos</span>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-foreground">
             O Que Nossos <span className="text-gradient">Clientes</span> Dizem
           </h2>
         </motion.div>
@@ -45,17 +46,23 @@ const TestimonialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="p-6 rounded-xl bg-card border border-border"
+              className="card-elevated p-7 relative"
             >
-              <div className="flex gap-1 mb-4">
+              <Quote className="w-8 h-8 text-primary/10 absolute top-5 right-5" />
+              <div className="flex gap-0.5 mb-5">
                 {Array.from({ length: t.rating }).map((_, j) => (
-                  <Star key={j} className="w-4 h-4 fill-primary text-primary" />
+                  <Star key={j} className="w-4 h-4 fill-amber-400 text-amber-400" />
                 ))}
               </div>
-              <p className="text-muted-foreground mb-4 leading-relaxed">"{t.text}"</p>
-              <div>
-                <p className="font-semibold text-foreground">{t.name}</p>
-                <p className="text-xs text-muted-foreground">{t.location}</p>
+              <p className="text-muted-foreground mb-6 leading-relaxed">"{t.text}"</p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-sm font-bold text-accent-foreground">
+                  {t.name.charAt(0)}
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground text-sm">{t.name}</p>
+                  <p className="text-xs text-muted-foreground">{t.location}</p>
+                </div>
               </div>
             </motion.div>
           ))}

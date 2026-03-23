@@ -36,15 +36,16 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="section-padding bg-gradient-surface">
+    <section id="faq" className="section-padding bg-surface-alt">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-14"
         >
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+          <span className="section-label mb-6 inline-flex">Dúvidas</span>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Perguntas <span className="text-gradient">Frequentes</span>
           </h2>
         </motion.div>
@@ -60,9 +61,9 @@ const FAQSection = () => {
               <AccordionItem
                 key={i}
                 value={`faq-${i}`}
-                className="bg-card border border-border rounded-xl px-6 data-[state=open]:border-primary/30"
+                className="card-flat px-6 data-[state=open]:border-primary/20 data-[state=open]:shadow-md"
               >
-                <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary hover:no-underline py-5">
+                <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary hover:no-underline py-5 text-[15px]">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
