@@ -3,11 +3,11 @@ import { Zap, BadgeCheck, GraduationCap, ShieldCheck, Baby, MessageCircle } from
 
 const reasons = [
   { icon: Zap, text: "Atendimento rápido em Campo Grande - RJ" },
-  { icon: BadgeCheck, text: "Produtos aprovados pela ANVISA" },
-  { icon: GraduationCap, text: "Técnicos especializados e certificados" },
-  { icon: ShieldCheck, text: "Garantia em todos os serviços" },
+  { icon: BadgeCheck, text: "Produtos aprovados pelo INEA" },
+  { icon: GraduationCap, text: "Mais de 500 clientes satisfeitos" },
+  { icon: ShieldCheck, text: "Inspeção Técnica GRATUITA" },
   { icon: Baby, text: "Segurança para crianças e pets" },
-  { icon: MessageCircle, text: "Orçamento rápido via WhatsApp" },
+  { icon: MessageCircle, text: "Atendimento rápido via WhatsApp" },
 ];
 
 const WhyChooseSection = () => {

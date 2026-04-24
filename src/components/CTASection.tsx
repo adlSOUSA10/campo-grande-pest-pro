@@ -22,9 +22,9 @@ const CTASection = () => {
             Proteja Sua Casa ou Empresa{" "}
             <span className="text-gradient">Agora Mesmo</span>
           </h2>
-          <p className="text-muted-foreground text-lg mb-10 max-w-lg mx-auto">
+          <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
             Evite prejuízos estruturais e riscos à saúde. Fale com um especialista e
-            receba um orçamento gratuito em minutos.
+            solicite sua avaliação técnica sem compromisso.
           </p>
           <a
             href={WHATSAPP_LINK}
@@ -36,6 +36,9 @@ const CTASection = () => {
             Falar com Especialista no WhatsApp
             <ArrowRight className="w-5 h-5" />
           </a>
+          <p className="text-xs text-muted-foreground/70 mt-4">
+            Inspeção Técnica GRATUITA · Orçamento realizado pessoalmente
+          </p>
         </motion.div>
       </div>
     </section>

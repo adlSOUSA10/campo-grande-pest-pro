@@ -5,8 +5,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
 
 const badges = [
-  { icon: Shield, text: "Produtos regulamentados" },
-  { icon: Zap, text: "Resposta em até 1h" },
+  { icon: Shield, text: "Mais de 500 clientes satisfeitos" },
+  { icon: Zap, text: "Inspeção Técnica GRATUITA" },
   { icon: CheckCircle2, text: "Garantia no serviço" },
 ];
 
@@ -46,8 +46,8 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-xl leading-relaxed">
-            Especialistas em descupinização, controle de ratos, baratas, formigas e
-            sanitização completa para residências e empresas.
+            Especialistas em descupinização, controle de ratos, baratas, formigas,
+            limpeza e higienização de reservatórios d'água.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">

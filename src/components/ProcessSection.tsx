@@ -23,7 +23,7 @@ const steps = [
   {
     icon: ShieldCheck,
     title: "Garantia e Monitoramento",
-    description: "Oferecemos garantia no serviço e monitoramento para assegurar a eliminação completa.",
+    description: "Oferecemos garantia no serviço e acompanhamento pós-atendimento para sua tranquilidade.",
     color: "from-primary/12 to-primary/20",
   },
 ];

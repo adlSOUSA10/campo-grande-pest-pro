@@ -1,6 +1,8 @@
-import { MapPin, Phone, MessageCircle, Clock } from "lucide-react";
+import { MapPin, Phone, MessageCircle, Clock, Instagram } from "lucide-react";
+import logoLZ from "@/assets/logo-lz.jpeg";
 
-const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
+const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de falar com um especialista da LZ Dedetização.";
+const INSTAGRAM_LINK = "https://instagram.com/lzdedetizacao";
 
 const Footer = () => {
   return (
@@ -9,13 +11,29 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-2xl font-bold mb-4">
-              <span className="text-primary-foreground opacity-80">LZ</span> Dedetização
-            </h3>
-            <p className="text-background/60 text-sm leading-relaxed">
-              Especialistas em controle de pragas urbanas em Campo Grande - RJ, Rio de Janeiro.
-              Atendimento residencial, comercial e industrial com garantia.
+            <div className="flex items-center gap-3 mb-5">
+              <img
+                src={logoLZ}
+                alt="LZ Dedetização"
+                className="w-14 h-14 rounded-full object-cover ring-2 ring-background/20"
+              />
+              <h3 className="font-display text-2xl font-bold">
+                <span className="opacity-90">LZ</span> Dedetização
+              </h3>
+            </div>
+            <p className="text-background/60 text-sm leading-relaxed mb-5">
+              Especialistas em descupinização, controle de ratos, baratas, formigas,
+              limpeza e higienização de reservatórios d'água em Campo Grande - RJ.
             </p>
+            <a
+              href={INSTAGRAM_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram da LZ Dedetização"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
           </div>
 
           {/* Contact */}
@@ -39,6 +57,15 @@ const Footer = () => {
                 <MessageCircle className="w-4 h-4 text-background/40 shrink-0" />
                 <span>WhatsApp</span>
               </a>
+              <a
+                href={INSTAGRAM_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-background transition-colors"
+              >
+                <Instagram className="w-4 h-4 text-background/40 shrink-0" />
+                <span>Instagram</span>
+              </a>
               <div className="flex items-center gap-3">
                 <Clock className="w-4 h-4 text-background/40 shrink-0" />
                 <span>Seg a Sáb: 7h às 18h</span>
@@ -50,11 +77,13 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-bold text-lg mb-5">Serviços</h4>
             <ul className="space-y-2.5 text-sm text-background/60">
+              <li><a href="#servicos" className="hover:text-background transition-colors">Descupinização</a></li>
               <li><a href="#servicos" className="hover:text-background transition-colors">Controle de Baratas</a></li>
               <li><a href="#servicos" className="hover:text-background transition-colors">Controle de Ratos</a></li>
               <li><a href="#servicos" className="hover:text-background transition-colors">Controle de Formigas</a></li>
               <li><a href="#servicos" className="hover:text-background transition-colors">Controle de Mosquitos</a></li>
-              <li><a href="#servicos" className="hover:text-background transition-colors">Descupinização</a></li>
+              <li><a href="#servicos" className="hover:text-background transition-colors">Percevejos de cama</a></li>
+              <li><a href="#servicos" className="hover:text-background transition-colors">Limpeza de Reservatórios d'água</a></li>
             </ul>
           </div>
         </div>
