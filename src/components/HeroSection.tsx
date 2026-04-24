@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, MessageCircle, Shield, Zap, CheckCircle2 } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import logoLZ from "@/assets/logo-lz.png";
 
 const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
 
@@ -14,13 +14,21 @@ const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0">
-        <img
-          src={heroBg}
-          alt="Profissional de dedetização realizando controle de pragas em Campo Grande RJ"
-          className="w-full h-full object-cover"
+      <div className="absolute inset-0 bg-gradient-surface">
+        {/* Logo as decorative background */}
+        <div
+          className="absolute inset-0 bg-no-repeat bg-right bg-contain opacity-[0.10] md:opacity-[0.14]"
+          style={{
+            backgroundImage: `url(${logoLZ})`,
+            backgroundPosition: "right -80px center",
+          }}
+          aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70" />
+        {/* Soft glows */}
+        <div className="absolute top-1/4 -right-32 w-[500px] h-[500px] rounded-full bg-primary/20 blur-[120px]" />
+        <div className="absolute bottom-0 -left-32 w-[400px] h-[400px] rounded-full bg-primary/10 blur-[120px]" />
+        {/* Left fade for text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-transparent" />
       </div>
 
       <div className="container mx-auto relative z-10 pt-28 pb-20">
