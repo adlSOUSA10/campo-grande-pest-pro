@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "É seguro para pets e crianças?",
     answer:
-      "Sim! Utilizamos produtos regulamentados pela ANVISA que são seguros para pessoas e animais. Orientamos sobre o tempo necessário antes de retornar ao ambiente tratado.",
+      "Sim! Utilizamos produtos regulamentados pelo INEA que são seguros para pessoas e animais. Orientamos sobre o tempo necessário antes de retornar ao ambiente tratado.",
   },
   {
     question: "Preciso sair do imóvel durante a dedetização?",
