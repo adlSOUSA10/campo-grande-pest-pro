@@ -6,13 +6,13 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 218 50% 95%;
     --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%;
+    --card: 220 45% 98%;
     --card-foreground: 222 47% 11%;
 
-    --popover: 0 0% 100%;
+    --popover: 220 45% 98%;
     --popover-foreground: 222 47% 11%;
 
     --primary: 240 80% 41%;
@@ -47,14 +47,14 @@
 
     /* Custom tokens */
     --glow: 240 80% 41%;
-    --surface: 220 20% 97%;
-    --surface-alt: 225 25% 95%;
-    --surface-hover: 220 14% 93%;
+    --surface: 218 45% 94%;
+    --surface-alt: 222 50% 91%;
+    --surface-hover: 220 40% 90%;
     --whatsapp: 142 70% 45%;
     --whatsapp-foreground: 0 0% 100%;
     --highlight: 240 70% 55%;
-    --gradient-start: 220 25% 98%;
-    --gradient-end: 235 30% 96%;
+    --gradient-start: 218 50% 95%;
+    --gradient-end: 225 55% 90%;
 
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.03), 0 1px 3px 0 rgb(0 0 0 / 0.04);
