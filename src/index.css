@@ -7,32 +7,32 @@
 @layer base {
   :root {
     --background: 240 20% 5%;
-    --foreground: 230 10% 92%;
+    --foreground: 220 70% 88%;
 
     --card: 240 15% 8%;
-    --card-foreground: 230 10% 92%;
+    --card-foreground: 220 70% 88%;
 
     --popover: 240 15% 8%;
-    --popover-foreground: 230 10% 92%;
+    --popover-foreground: 220 70% 88%;
 
-    --primary: 240 80% 41%;
+    --primary: 240 80% 55%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 240 15% 12%;
-    --secondary-foreground: 230 10% 92%;
+    --secondary-foreground: 220 60% 85%;
 
     --muted: 240 10% 14%;
-    --muted-foreground: 240 8% 65%;
+    --muted-foreground: 220 45% 70%;
 
     --accent: 240 30% 16%;
-    --accent-foreground: 230 10% 92%;
+    --accent-foreground: 220 70% 90%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 10% 16%;
-    --input: 240 10% 16%;
-    --ring: 240 80% 41%;
+    --border: 240 30% 18%;
+    --input: 240 30% 18%;
+    --ring: 240 80% 55%;
 
     --radius: 0.75rem;
 
@@ -107,7 +107,7 @@
   }
 
   .section-padding {
-    @apply px-4 py-16 md:px-8 md:py-24 lg:px-16;
+    @apply px-4 py-12 md:px-8 md:py-16 lg:px-16;
   }
 
   .card-elevated {
