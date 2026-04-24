@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, MessageCircle } from "lucide-react";
+import logoLZ from "@/assets/logo-lz.jpeg";
 
 const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
 
@@ -35,9 +36,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4">
-        <a href="#inicio" className="font-display text-xl font-bold tracking-tight">
-          <span className="text-gradient">LZ</span>
-          <span className="text-foreground"> Dedetização</span>
+        <a href="#inicio" className="flex items-center gap-3">
+          <img src={logoLZ} alt="LZ Dedetização" className="w-10 h-10 rounded-full object-cover" />
+          <span className="font-display text-xl font-bold tracking-tight">
+            <span className="text-gradient">LZ</span>
+            <span className="text-foreground"> Dedetização</span>
+          </span>
         </a>
 
         {/* Desktop */}

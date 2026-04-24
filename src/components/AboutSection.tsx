@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Shield, Users, Award, Building2 } from "lucide-react";
 
 const features = [
-  { icon: Shield, text: "Produtos regulamentados pela ANVISA", desc: "Segurança comprovada" },
-  { icon: Users, text: "Técnicos treinados e certificados", desc: "Equipe qualificada" },
-  { icon: Award, text: "Garantia em todos os serviços", desc: "Compromisso total" },
+  { icon: Shield, text: "Produtos regulamentados pelo INEA", desc: "Segurança comprovada" },
+  { icon: Users, text: "Mais de 500 clientes satisfeitos", desc: "Confiança comprovada" },
+  { icon: Award, text: "Inspeção Técnica GRATUITA", desc: "Sem compromisso" },
   { icon: Building2, text: "Residencial, comercial e industrial", desc: "Atendimento completo" },
 ];
 
@@ -26,7 +26,7 @@ const AboutSection = () => {
           <p className="text-muted-foreground text-lg leading-relaxed">
             Somos uma empresa especializada em controle de pragas urbanas atuando em
             Campo Grande, Rio de Janeiro, e região. Com técnicos altamente treinados e produtos
-            regulamentados pela ANVISA, oferecemos soluções seguras e eficazes para
+            regulamentados pelo INEA, oferecemos soluções seguras e eficazes para
             residências, comércios e indústrias.
           </p>
         </motion.div>
