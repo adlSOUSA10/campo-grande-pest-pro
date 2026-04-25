@@ -1,9 +1,19 @@
 import { motion } from "framer-motion";
-import { Shield, Users, Award, Building2, Star, ShieldCheck, Zap, Baby, MessageCircle } from "lucide-react";
+import {
+  Shield,
+  Users,
+  Award,
+  Building2,
+  Star,
+  ShieldCheck,
+  Zap,
+  Baby,
+  MessageCircle,
+  DollarSign,
+} from "lucide-react";
 
 const stats = [
   { icon: Users, value: "+500", label: "Clientes satisfeitos" },
-  { icon: Star, value: "4.9", label: "Avaliação média" },
   { icon: Award, value: "+10", label: "Anos de experiência" },
   { icon: ShieldCheck, value: "100%", label: "Garantia no serviço" },
 ];
@@ -15,11 +25,18 @@ const features = [
   { icon: Building2, text: "Residencial, comercial e industrial" },
   { icon: ShieldCheck, text: "Inspeção Técnica GRATUITA" },
   { icon: MessageCircle, text: "Atendimento rápido via WhatsApp" },
+  {
+    icon: DollarSign,
+    text: "Preço justo, sem surpresas. Você investe em um serviço que resolve, não em soluções temporárias",
+  },
 ];
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="section-padding bg-surface-alt border-y border-border relative overflow-hidden">
+    <section
+      id="sobre"
+      className="section-padding bg-surface-alt border-y border-border relative overflow-hidden"
+    >
       <div className="absolute inset-0 bg-gradient-radial pointer-events-none" />
       <div className="container mx-auto relative z-10">
         <motion.div
@@ -34,14 +51,15 @@ const AboutSection = () => {
             Sobre a <span className="text-gradient">LZ Dedetização</span>
           </h2>
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-            Especialistas em controle de pragas urbanas em Campo Grande - RJ. Com técnicos
-            treinados e produtos regulamentados pelo INEA, oferecemos soluções seguras e
-            eficazes para residências, comércios e indústrias.
+            Especialistas em controle de pragas urbanas em Campo Grande - RJ.
+            Com técnicos treinados e produtos regulamentados pelo INEA,
+            oferecemos soluções seguras e eficazes para residências, comércios e
+            indústrias.
           </p>
         </motion.div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 mb-10">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -57,7 +75,9 @@ const AboutSection = () => {
               <div className="font-display text-2xl md:text-3xl font-bold text-foreground mb-1 group-hover:text-white transition-colors">
                 {stat.value}
               </div>
-              <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
+              <div className="text-xs md:text-sm text-muted-foreground">
+                {stat.label}
+              </div>
             </motion.div>
           ))}
         </div>
@@ -71,7 +91,11 @@ const AboutSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="card-flat flex items-center gap-3 p-4 group hover:border-primary/40"
+              className={`card-flat flex items-center gap-3 p-4 group hover:border-primary/40 ${
+                i === features.length - 1
+                  ? "sm:col-span-2 lg:col-span-1 lg:col-start-2"
+                  : ""
+              }`}
             >
               <div className="w-10 h-10 rounded-lg bg-primary/15 flex items-center justify-center shrink-0 group-hover:bg-primary/25 transition-colors">
                 <f.icon className="w-5 h-5 text-primary" />

@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { Phone, MessageCircle, Shield, Zap, CheckCircle2 } from "lucide-react";
 import logoLZ from "@/assets/logo-lz.png";
 
-const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
+const WHATSAPP_LINK =
+  "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
 
 const badges = [
   { icon: Shield, text: "Mais de 500 clientes satisfeitos" },
@@ -12,7 +13,10 @@ const badges = [
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
+    <section
+      id="inicio"
+      className="relative min-h-screen flex items-center overflow-hidden"
+    >
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-surface">
         {/* Logo as decorative background */}
@@ -54,11 +58,11 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-xl leading-relaxed">
-            Especialistas em descupinização, controle de ratos, baratas, formigas,
-            limpeza e higienização de reservatórios d'água.
+            Especialistas em descupinização, controle de ratos, baratas,
+            formigas, limpeza e higienização de reservatórios d'água.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3">
+          {/* <div className="flex flex-col sm:flex-row gap-3">
             <a
               href={WHATSAPP_LINK}
               target="_blank"
@@ -75,7 +79,7 @@ const HeroSection = () => {
               <Phone className="w-5 h-5" />
               Atendimento Imediato
             </a>
-          </div>
+          </div> */}
 
           <motion.div
             initial={{ opacity: 0, y: 15 }}

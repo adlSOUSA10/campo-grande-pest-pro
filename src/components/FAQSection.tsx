@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "Quanto custa uma dedetização em Campo Grande - RJ?",
     answer:
-      "O valor varia de acordo com o tipo de praga, tamanho do imóvel e nível de infestação. Entre em contato pelo WhatsApp para receber um orçamento personalizado e gratuito.",
+      "O tempo de duração do tratamento depende de fatores como tipo de praga, condições do ambiente e nível de infestação. Trabalhamos com soluções eficazes e orientamos o prazo ideal após a avaliação técnica no local.",
   },
   {
     question: "Quanto tempo dura o efeito da descupinização?",
@@ -20,17 +20,17 @@ const faqs = [
   {
     question: "É seguro para pets e crianças?",
     answer:
-      "Sim! Utilizamos produtos regulamentados pelo INEA que são seguros para pessoas e animais. Orientamos sobre o tempo necessário antes de retornar ao ambiente tratado.",
+      "Sim! Nossos serviços são realizados com produtos regulamentados e aplicação profissional, garantindo segurança para toda a família. Após o atendimento, orientamos sobre o tempo ideal para retorno ao ambiente.",
   },
   {
     question: "Preciso sair do imóvel durante a dedetização?",
     answer:
-      "Em alguns casos, recomendamos a saída temporária do ambiente durante a aplicação. Nosso técnico orientará sobre o procedimento adequado para cada situação.",
+      "Depende do caso. Em algumas situações, é recomendada a saída temporária do imóvel durante a aplicação. Nosso técnico orientará o procedimento ideal após avaliar o ambiente.",
   },
   {
     question: "A LZ Dedetização atende toda Campo Grande - RJ?",
     answer:
-      "Sim! Atendemos todos os bairros de Campo Grande e região do Rio de Janeiro, incluindo áreas residenciais, comerciais e industriais.",
+      "Sim! Somos especializados na região de Campo Grande, mas também atendemos todo o Rio de Janeiro, incluindo áreas residenciais, comerciais e industriais.",
   },
 ];
 

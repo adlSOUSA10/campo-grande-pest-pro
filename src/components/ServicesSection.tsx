@@ -16,26 +16,79 @@ import {
   AlertTriangle,
 } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de falar com um especialista da LZ Dedetização.";
+const WHATSAPP_LINK =
+  "https://wa.me/5521986722759?text=Olá! Gostaria de falar com um especialista da LZ Dedetização.";
 
 const featured = {
   icon: TreeDeciduous,
   title: "Descupinização",
   description:
-    "Cupins causam danos estruturais silenciosos, atacando móveis, portas e vigas. Utilizamos barreiras químicas, tratamento localizado e inspeção técnica especializada com garantia completa.",
+    "Cupins causam danos estruturais silenciosos, atacando móveis, portas e vigas. Utilizamos barreiras químicas, tratamento localizado e inspeção técnica gratuita especializada com garantia completa.",
 };
 
 const services = [
-  { icon: Bug, title: "Controle de Baratas", description: "Eliminação completa com métodos seguros para residências e empresas.", main: true },
-  { icon: Rat, title: "Controle de Ratos", description: "Controle profissional contra danos estruturais e doenças.", main: true },
-  { icon: Footprints, title: "Controle de Formigas", description: "Tratamento profissional para eliminação total da colônia.", main: true },
-  { icon: Zap, title: "Controle de Mosquitos", description: "Prevenção contra dengue, zika e chikungunya.", main: true },
-  { icon: Bed, title: "Controle de Percevejos de cama", description: "Tratamento eficaz contra percevejos em colchões e mobília.", main: true },
-  { icon: Droplets, title: "Limpeza de Reservatórios d'água", description: "Limpeza e higienização completa de caixas d'água.", main: true },
-  { icon: Bird, title: "Controle de Moscas", description: "Tratamento contra moscas em ambientes residenciais e comerciais.", main: false },
-  { icon: Shirt, title: "Controle de Traças", description: "Proteção para roupas, livros e mobília contra traças.", main: false },
-  { icon: ScanSearch, title: "Controle de Aranhas", description: "Eliminação segura de aranhas em todos os ambientes.", main: false },
-  { icon: Snowflake, title: "Controle de Escorpiões", description: "Controle especializado e seguro contra escorpiões.", main: false },
+  {
+    icon: Bug,
+    title: "Controle de Baratas",
+    description:
+      "Eliminação completa com métodos seguros para residências e empresas.",
+    main: true,
+  },
+  {
+    icon: Rat,
+    title: "Controle de Ratos",
+    description: "Controle profissional contra danos estruturais e doenças.",
+    main: true,
+  },
+  {
+    icon: Footprints,
+    title: "Controle de Formigas",
+    description: "Tratamento profissional para eliminação total da colônia.",
+    main: true,
+  },
+  {
+    icon: Zap,
+    title: "Controle de Mosquitos",
+    description: "Prevenção contra dengue, zika e chikungunya.",
+    main: true,
+  },
+  {
+    icon: Bed,
+    title: "Controle de Percevejos de cama",
+    description: "Tratamento eficaz contra percevejos em colchões e mobília.",
+    main: true,
+  },
+  {
+    icon: Droplets,
+    title: "Limpeza de Reservatórios d'água",
+    description: "Limpeza e higienização completa de caixas d'água.",
+    main: true,
+  },
+  {
+    icon: Bird,
+    title: "Controle de Moscas",
+    description:
+      "Tratamento contra moscas em ambientes residenciais e comerciais.",
+    main: false,
+  },
+  {
+    icon: Shirt,
+    title: "Controle de Traças",
+    description: "Proteção para roupas, livros e mobília contra traças.",
+    main: false,
+  },
+  {
+    icon: ScanSearch,
+    title: "Controle de Aranhas",
+    description: "Eliminação segura de aranhas em todos os ambientes.",
+    main: false,
+  },
+  {
+    icon: Snowflake,
+    title: "Controle de Escorpiões",
+    description: "Controle especializado e seguro contra escorpiões.",
+    main: false,
+  },
 ];
 
 const ServicesSection = () => {
@@ -53,7 +106,8 @@ const ServicesSection = () => {
             Nossos <span className="text-gradient">Serviços</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Soluções completas em controle de pragas para Campo Grande - RJ e região
+            Soluções completas em controle de pragas para Campo Grande - RJ e
+            região
           </p>
         </motion.div>
 
@@ -81,14 +135,21 @@ const ServicesSection = () => {
                 {featured.description}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
-                {["Barreiras químicas", "Tratamento localizado", "Inspeção especializada"].map((item) => (
-                  <div key={item} className="flex items-center gap-2.5 text-sm text-foreground bg-accent/50 px-4 py-2.5 rounded-xl">
+                {[
+                  "Barreiras químicas",
+                  "Tratamento localizado",
+                  "Inspeção especializada",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-2.5 text-sm text-foreground bg-accent/50 px-4 py-2.5 rounded-xl"
+                  >
                     <span className="w-2 h-2 rounded-full bg-primary shrink-0" />
                     {item}
                   </div>
                 ))}
               </div>
-              <a
+              {/* <a
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -97,7 +158,7 @@ const ServicesSection = () => {
                 <MessageCircle className="w-4 h-4" />
                 Falar com Especialista
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </a> */}
             </div>
           </div>
         </motion.div>

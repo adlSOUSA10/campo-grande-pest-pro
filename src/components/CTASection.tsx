@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { MessageCircle, ShieldAlert, ArrowRight } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
+const WHATSAPP_LINK =
+  "https://wa.me/5521986722759?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
 
 const CTASection = () => {
   return (
@@ -23,8 +24,8 @@ const CTASection = () => {
             <span className="text-gradient">Agora Mesmo</span>
           </h2>
           <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
-            Evite prejuízos estruturais e riscos à saúde. Fale com um especialista e
-            solicite sua avaliação técnica sem compromisso.
+            Evite prejuízos estruturais e riscos à saúde. Fale com um
+            especialista e solicite sua avaliação técnica sem compromisso.
           </p>
           <a
             href={WHATSAPP_LINK}

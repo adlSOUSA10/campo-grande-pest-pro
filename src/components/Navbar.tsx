@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, MessageCircle } from "lucide-react";
 import logoLZ from "@/assets/logo-lz.png";
+import wpp from "@/assets/whatsapp.png";
 
-const WHATSAPP_LINK = "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
+const WHATSAPP_LINK =
+  "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -37,7 +39,11 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-4">
         <a href="#inicio" className="flex items-center gap-3">
-          <img src={logoLZ} alt="LZ Dedetização" className="w-10 h-10 rounded-full object-cover" />
+          <img
+            src={logoLZ}
+            alt="LZ Dedetização"
+            className="w-10 h-10 rounded-full object-cover"
+          />
           <span className="font-display text-xl font-bold tracking-tight">
             <span className="text-gradient">LZ</span>
             <span className="text-foreground"> Dedetização</span>
@@ -55,15 +61,6 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-whatsapp px-5 py-2.5 text-sm ml-3"
-          >
-            <MessageCircle className="w-4 h-4" />
-            WhatsApp
-          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -102,7 +99,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="btn-whatsapp px-4 py-3 mt-2"
               >
-                <MessageCircle className="w-4 h-4" />
+                <img src={wpp} alt="WhatsApp" className="w-4 h-4" />
                 Falar no WhatsApp
               </a>
             </div>
