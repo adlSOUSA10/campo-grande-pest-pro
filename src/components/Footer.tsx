@@ -95,7 +95,7 @@ const Footer = () => {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-foreground transition-colors"
+                className="flex items-center gap-3 hover:text-black transition-colors"
               >
                 <MessageCircle className="w-4 h-4 text-primary shrink-0" />
                 <span>WhatsApp</span>
@@ -104,7 +104,7 @@ const Footer = () => {
                 href={INSTAGRAM_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-foreground transition-colors"
+                className="flex items-center gap-3 hover:text-black transition-colors"
               >
                 <Instagram className="w-4 h-4 text-primary shrink-0" />
                 <span>lzdedetizacao</span>
@@ -123,7 +123,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#servicos"
-                  className="hover:text-foreground transition-colors"
+                  className="hover:text-black transition-colors"
                 >
                   Descupinização
                 </a>
@@ -131,7 +131,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#servicos"
-                  className="hover:text-foreground transition-colors"
+                  className="hover:text-black transition-colors"
                 >
                   Controle de Baratas
                 </a>
@@ -139,7 +139,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#servicos"
-                  className="hover:text-foreground transition-colors"
+                  className="hover:text-black transition-colors"
                 >
                   Controle de Ratos
                 </a>
@@ -147,7 +147,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#servicos"
-                  className="hover:text-foreground transition-colors"
+                  className="hover:text-black transition-colors"
                 >
                   Controle de Formigas
                 </a>
@@ -155,7 +155,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#servicos"
-                  className="hover:text-foreground transition-colors"
+                  className="hover:text-black transition-colors"
                 >
                   Controle de Mosquitos
                 </a>
@@ -163,7 +163,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#servicos"
-                  className="hover:text-foreground transition-colors"
+                  className="hover:text-black transition-colors"
                 >
                   Percevejos de cama
                 </a>
@@ -171,7 +171,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#servicos"
-                  className="hover:text-foreground transition-colors"
+                  className="hover:text-black transition-colors"
                 >
                   Limpeza de Reservatórios d'água
                 </a>
@@ -179,7 +179,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#servicos"
-                  className="hover:text-foreground transition-colors"
+                  className="hover:text-black transition-colors"
                 >
                   Entre outros
                 </a>
