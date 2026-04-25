@@ -56,7 +56,7 @@ const Navbar = () => {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-muted-foreground hover:text-foreground px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200"
+              className="text-sm text-muted-foreground hover:text-black px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200"
             >
               {item.label}
             </a>
@@ -88,7 +88,7 @@ const Navbar = () => {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-muted-foreground hover:text-foreground hover:bg-muted px-4 py-3 rounded-lg transition-all"
+                  className="text-muted-foreground hover:text-black hover:bg-muted px-4 py-3 rounded-lg transition-all"
                 >
                   {item.label}
                 </a>

@@ -72,7 +72,7 @@ const AboutSection = () => {
               <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-primary/15 text-primary mb-3 group-hover:bg-primary/25 transition-colors">
                 <stat.icon className="w-5 h-5" />
               </div>
-              <div className="font-display text-2xl md:text-3xl font-bold text-foreground mb-1 group-hover:text-white transition-colors">
+              <div className="font-display text-2xl md:text-3xl font-bold text-foreground mb-1 group-hover:text-black transition-colors">
                 {stat.value}
               </div>
               <div className="text-xs md:text-sm text-muted-foreground">
@@ -100,7 +100,7 @@ const AboutSection = () => {
               <div className="w-10 h-10 rounded-lg bg-primary/15 flex items-center justify-center shrink-0 group-hover:bg-primary/25 transition-colors">
                 <f.icon className="w-5 h-5 text-primary" />
               </div>
-              <p className="font-medium text-foreground text-sm group-hover:text-white transition-colors">
+              <p className="font-medium text-foreground text-sm group-hover:text-black transition-colors">
                 {f.text}
               </p>
             </motion.div>
