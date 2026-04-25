@@ -2,9 +2,6 @@ import { motion } from "framer-motion";
 import { Phone, MessageCircle, Shield, Zap, CheckCircle2 } from "lucide-react";
 import logoLZ from "@/assets/logo-lz.png";
 
-const WHATSAPP_LINK =
-  "https://wa.me/5521999999999?text=Olá! Gostaria de solicitar um orçamento para dedetização.";
-
 const badges = [
   { icon: Shield, text: "Mais de 500 clientes satisfeitos" },
   { icon: Zap, text: "Inspeção Técnica GRATUITA" },
