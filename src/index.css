@@ -6,61 +6,61 @@
 
 @layer base {
   :root {
-    --background: 240 20% 5%;
-    --foreground: 220 70% 88%;
+    --background: 0 0% 100%;
+    --foreground: 230 60% 18%;
 
-    --card: 240 15% 8%;
-    --card-foreground: 220 70% 88%;
+    --card: 0 0% 100%;
+    --card-foreground: 230 60% 18%;
 
-    --popover: 240 15% 8%;
-    --popover-foreground: 220 70% 88%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 60% 18%;
 
-    --primary: 240 80% 55%;
+    --primary: 240 80% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 15% 12%;
-    --secondary-foreground: 220 60% 85%;
+    --secondary: 220 60% 96%;
+    --secondary-foreground: 230 60% 22%;
 
-    --muted: 240 10% 14%;
-    --muted-foreground: 220 45% 70%;
+    --muted: 220 40% 96%;
+    --muted-foreground: 230 30% 42%;
 
-    --accent: 240 30% 16%;
-    --accent-foreground: 220 70% 90%;
+    --accent: 220 70% 94%;
+    --accent-foreground: 230 60% 22%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 30% 18%;
-    --input: 240 30% 18%;
-    --ring: 240 80% 55%;
+    --border: 220 30% 88%;
+    --input: 220 30% 88%;
+    --ring: 240 80% 45%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 240 15% 8%;
-    --sidebar-foreground: 230 10% 92%;
-    --sidebar-primary: 240 80% 41%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 230 60% 18%;
+    --sidebar-primary: 240 80% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 10% 14%;
-    --sidebar-accent-foreground: 230 10% 92%;
-    --sidebar-border: 240 10% 16%;
-    --sidebar-ring: 240 80% 41%;
+    --sidebar-accent: 220 60% 96%;
+    --sidebar-accent-foreground: 230 60% 22%;
+    --sidebar-border: 220 30% 88%;
+    --sidebar-ring: 240 80% 45%;
 
     /* Custom tokens */
-    --glow: 240 80% 41%;
-    --surface: 240 12% 10%;
-    --surface-alt: 240 14% 7%;
-    --surface-hover: 240 12% 14%;
-    --whatsapp: 142 70% 49%;
+    --glow: 240 80% 55%;
+    --surface: 220 50% 98%;
+    --surface-alt: 220 60% 97%;
+    --surface-hover: 220 60% 94%;
+    --whatsapp: 142 70% 42%;
     --whatsapp-foreground: 0 0% 100%;
-    --highlight: 240 70% 55%;
-    --gradient-start: 240 25% 8%;
-    --gradient-end: 240 80% 12%;
+    --highlight: 240 70% 50%;
+    --gradient-start: 0 0% 100%;
+    --gradient-end: 220 80% 96%;
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
-    --shadow-lg: 0 10px 25px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.3);
-    --shadow-xl: 0 20px 40px -5px rgb(0 0 0 / 0.6), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+    --shadow-sm: 0 1px 2px 0 hsl(230 60% 20% / 0.06);
+    --shadow-md: 0 4px 12px -2px hsl(230 60% 20% / 0.08), 0 2px 4px -2px hsl(230 60% 20% / 0.06);
+    --shadow-lg: 0 10px 25px -5px hsl(230 60% 20% / 0.12), 0 4px 10px -4px hsl(230 60% 20% / 0.08);
+    --shadow-xl: 0 20px 40px -8px hsl(230 60% 20% / 0.15), 0 8px 16px -6px hsl(230 60% 20% / 0.1);
   }
 }
 

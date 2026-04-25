@@ -21,7 +21,7 @@ const Footer = () => {
       className="relative section-padding text-foreground border-t border-border overflow-hidden"
       style={{
         background:
-          "linear-gradient(180deg, hsl(240 30% 7%) 0%, hsl(240 45% 10%) 60%, hsl(240 60% 12%) 100%)",
+          "linear-gradient(180deg, hsl(220 60% 97%) 0%, hsl(220 70% 94%) 60%, hsl(220 80% 92%) 100%)",
       }}
     >
       {/* Decorative glow */}
